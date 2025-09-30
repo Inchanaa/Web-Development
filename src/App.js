@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
 
 function App() {
+  const name ="John";
+  const nm = <h2>Ram</h2>
+  const user = (
+    <div>
+      {name}
+      {nm}
+    </div>
+  );
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='name'>Inchana</h1>
+
+      <div className= {styles.App}>
+        <h2 className={styles.nm}>{name}</h2>
+      </div>
+      <h2>{name}</h2>
+      {nm}
+{user}
     </div>
   );
 }
